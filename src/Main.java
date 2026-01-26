@@ -28,34 +28,41 @@ public class Main {
         System.out.println();
         System.out.print(Arrays.toString(outputArray1));
         System.out.println();
+        System.out.println();
 
 
         System.out.println("Задание 2");
         int[] inputArray2 = {10000, 15000, 20000, 25000, 110000};
-        float[] outputArray2 = new float[5];
-        for (int i = 0; i < inputArray2.length; i++) {
-            outputArray2[i] = (float) (inputArray2[i] * 0.13);
+        float[] outputArray2 = new float[inputArray2.length];
+        int step=0;
+        for (int i: inputArray2) {
+            outputArray2[step] = (float) (i * 0.13);
+            step++;
         }
         System.out.print(Arrays.toString(inputArray2));
         System.out.println();
         System.out.print(Arrays.toString(outputArray2));
         System.out.println();
+        System.out.println();
 
 
         System.out.println("Задание 3");
         int[] inputArray3 = {3000, 3500, 7000, 6500, 5000};
-        boolean[] outputArray3 = new boolean[5];
-        for (int i = 0; i < inputArray3.length; i++) {
-            outputArray3[i] = inputArray3[i] > 5000;
+        boolean[] outputArray3 = new boolean[inputArray3.length];
+        int teg=0;
+        for (int i: inputArray3) {
+            outputArray3[teg] = i > 5000;
+            teg++;
         }
         System.out.print(Arrays.toString(inputArray3));
         System.out.println();
         System.out.print(Arrays.toString(outputArray3));
         System.out.println();
+        System.out.println();
 
 
         System.out.println("Задание 4");
-        int[] inputArray4 = {1000, 1500, -2000, 2500, 3000};
+        int[] inputArray4 = {1000, 1500, 0, 2500, 3000};
         boolean[] outputArray4 = new boolean[1];
         outputArray4[0] = true;
         for (int balance : inputArray4) {
@@ -72,7 +79,7 @@ public class Main {
 
         System.out.println("Задание 5");
         int[] inputArray5 = {0, 34444, 0, 1000, -15000};
-        int[] outputArray5 = new int[1];
+        int[] outputArray5 = new int[inputArray5.length];
         outputArray5[0] = 0;
         for (int i : inputArray5) {
             if (i > 0) {
