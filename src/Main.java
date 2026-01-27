@@ -79,7 +79,7 @@ public class Main {
 
         System.out.println("Задание 5");
         int[] inputArray5 = {0, 34444, 0, 1000, -15000};
-        int[] outputArray5 = new int[inputArray5.length];
+        int[] outputArray5 = new int[1];
         outputArray5[0] = 0;
         for (int i : inputArray5) {
             if (i > 0) {
